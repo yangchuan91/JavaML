@@ -1,6 +1,5 @@
 package ml.kmeans;
 /**
- * 需要聚类的实体类，有两个属性进球数和抢断数，根据这两个属性对球员进行分类
  * @author yangchuan
  *
  */
@@ -8,7 +7,7 @@ public class Point {
 	
 	private double x;//进球数
 	private double y;//抢断书
-	private int clusterId;//聚类ID，标识此球员属于哪个聚类
+	private int clusterId;//聚类ID
 	public double getX() {
 		return x;
 	}
