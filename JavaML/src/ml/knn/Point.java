@@ -3,11 +3,12 @@ package ml.knn;
  * @author yangchuan
  *
  */
-public class Point {
+public class Point implements Comparable<Point> {
 	
 	private double x;//x坐标
 	private double y;//y坐标
 	private int clusterId;//类别ID
+	private double distance;//样本数据与待测点数据的距离
 	public double getX() {
 		return x;
 	}
@@ -26,9 +27,17 @@ public class Point {
 	public void setClusterId(int clusterId) {
 		this.clusterId = clusterId;
 	}
+	public double getDistance() {
+		return distance;
+	}
+	public void setDistance(double distance) {
+		this.distance = distance;
+	}
+	
 	@Override
 	public String toString() {
-		return "Point [x=" + x + ", y=" + y + ", clusterId=" + clusterId + "]";
+		return "Point [x=" + x + ", y=" + y + ", clusterId=" + clusterId + ", distance=" + distance
+				+ "]";
 	}
 	public Point(double x, double y, int clusterId) {
 		super();
@@ -41,9 +50,9 @@ public class Point {
 		this.x = x;
 		this.y = y;
 	}
-	
-	
-	
-	
-
+	@Override
+	public int compareTo(Point o) {
+		// TODO Auto-generated method stub
+		return Double.valueOf(this.getDistance()).compareTo(Double.valueOf(o.getDistance()));
+	}
 }

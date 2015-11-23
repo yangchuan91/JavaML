@@ -16,9 +16,15 @@ import java.util.List;
 public class GenOriData {
 	
 	public static void main(String[] args) {
-		String path="C:/Users/hp/git/JavaML/JavaML/file/knnOri.txt";
-		writeDataSet(path,genDataLine(true, 100, 50));
-		System.out.println(getOriKNNData(path));
+		//用于产生原始数据集合
+		String oriPath="C:/Users/hp/git/JavaML/JavaML/file/knnOri.txt";
+		writeDataSet(oriPath,genDataLine(true, 100, 50));
+		System.out.println(getOriKNNData(oriPath));
+		
+		//用于产生待测分类数据集合
+		String testPath="C:/Users/hp/git/JavaML/JavaML/file/knnTest.txt";
+		writeDataSet(testPath,genDataLine(false, 5, 50));
+		System.out.println(getOriKNNData(testPath));
 	}
 	/**
 	 * 用来读取文件中的数据，构造原始数据
