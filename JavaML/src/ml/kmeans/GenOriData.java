@@ -16,7 +16,7 @@ import java.util.List;
 public class GenOriData {
 	
 	public static void main(String[] args) {
-		writeDataSet("E:/player.txt",5000,50);
+		writeDataSet("C:/Users/hp/git/JavaML/JavaML/file/Kmeans.txt",5000,50);
 		//System.out.println(getOriPlaysData("E:/player.txt"));
 	}
 	/**

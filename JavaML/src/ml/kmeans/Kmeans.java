@@ -132,7 +132,7 @@ public class Kmeans {
 	public static void main(String[] args) {
 		//GenOriData.writeDataSet("E:/player.txt", 500, 50);
 		//从文件中读取数据集
-		List<Point> players=GenOriData.getOriPlaysData("E:/player.txt");
+		List<Point> players=GenOriData.getOriPlaysData("C:/Users/hp/git/JavaML/JavaML/file/Kmeans.txt");
 		int k=10; //聚类中心的个数
 		double mu=0.05; //偏移量阈值
 		int repeat=60;
