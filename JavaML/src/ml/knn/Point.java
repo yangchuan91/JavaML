@@ -1,7 +1,7 @@
 package ml.knn;
 /**
  * @author yangchuan
- *
+ * KNN算法建模实体类
  */
 public class Point implements Comparable<Point> {
 	

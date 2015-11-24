@@ -81,6 +81,13 @@ public class KNN {
 		}
 		return index+1;
 	}
+	/**
+	 * KNNËã·¨Èë¿Ú
+	 * @param point
+	 * @param dataSet
+	 * @param k
+	 * @return
+	 */
 	public Point knnAlgotithm(Point point,List<Point> dataSet,int k){
 		List<Point> KNNlist=calKNNPointList(point, dataSet, k);
 		int clusterId=calKNNPointClusterId(point,KNNlist);
